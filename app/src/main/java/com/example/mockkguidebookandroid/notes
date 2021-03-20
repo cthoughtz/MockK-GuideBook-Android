@@ -1,0 +1,6 @@
+Spy on existing classes
+Rather then mocking an object, you can create spies of real objects. Spies will run the real methods
+in a class, unlike mocks with which don't run anything. Stubb methods on a spy will run the stub
+instead, so you can have a mixture of real methods and stubbed methods.
+
+Spies get there name because you can spy on the code you are testing and see what methods it called
