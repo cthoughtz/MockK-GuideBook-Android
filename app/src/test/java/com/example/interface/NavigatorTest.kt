@@ -5,6 +5,7 @@ import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test
 
+// https://notwoods.github.io/mockk-guidebook/docs/mocking/stubbing/
 class NavigatorTest {
 
     val navigator = mockk<Navigator>()
