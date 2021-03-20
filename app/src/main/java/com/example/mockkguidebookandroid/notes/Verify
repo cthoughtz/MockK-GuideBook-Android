@@ -1,0 +1,3 @@
+Verify that a functions were called
+
+Using [verify] to verify that a function was called looks alot like using every for stubbing.
