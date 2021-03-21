@@ -1,0 +1,29 @@
+Coroutines and suspend functions
+
+As MockK uses function literals to create stubs, small changes are needed to stub suspend functions.
+MockK provides functions prefixed with [co] as equivalents to other functions, such as [coEvery] and
+[coAnswers].
+
+The full list of methods with coroutine equivalents:
+
+1. coEvery
+2. coJustRun
+3. coVerify
+4. coVerifyAll
+5. coVerifyOrder
+6. coVerifySequence
+7. coExcludeRecords
+8. coMatch
+9. coMatchNullable
+10. coWithArg
+11. coWithNullableArg
+12. coAnswers
+13. coAndThen
+14. coInvoke
+
+Difference between order an sequence is that order just makes sure that the calls are called in a order while sequence makes sure
+that the called in a order but not more then once. only in that sequence.
+
+example:
+order -> A B C A B C A B C (they are called inorder even though they repeat)
+sequence -> A B C (The sequence breaks if A is called again because it is not apart of that sequence)

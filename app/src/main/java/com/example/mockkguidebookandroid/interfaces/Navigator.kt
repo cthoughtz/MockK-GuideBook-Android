@@ -4,4 +4,5 @@ interface Navigator {
 
     val currentLocation:String
     fun navigateTo(newLocation: String)
+    fun navigateFrom(oldLocation:String)
 }
