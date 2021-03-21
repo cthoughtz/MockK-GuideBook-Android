@@ -73,8 +73,6 @@ class RoboTest {
             } // exclude method -> Useful because button calls alot of methods and if it is set to relax then it wil lverify that all
             // of the methods are called in that class.
         }
-
-
     }
 
 }
