@@ -1,0 +1,10 @@
+Most stubs will use [returns] to always return the same value when the corresponding method is called.
+Sometimes, the method you're trying to mock may be more complicated and require a more advanced stub.
+
+If you watn to change the resutl of a mocked method depending on its arguments, run additional code
+whenever a method is called, or just print out "Hello world" when a mock is used, [answers] is the
+tool you'll wanted use.
+
+[answers] takes the place of [returns] after an [every] call. When using [returns], it should be
+followed by a value to return. When using [answers], it should be followed by a lambda function that
+is run when the mocked method is called.
