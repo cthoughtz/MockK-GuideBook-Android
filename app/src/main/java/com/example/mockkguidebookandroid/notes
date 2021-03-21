@@ -25,5 +25,6 @@ Difference between order an sequence is that order just makes sure that the call
 that the called in a order but not more then once. only in that sequence.
 
 example:
-order -> A B C A B C A B C (they are called inorder even though they repeat)
+order -> A B C A B C A B C (they are called inorder even though they repeat or items are messing)
+order -> A B C D E A C E (Even if an items is missing it is still in the correct order so it passes)
 sequence -> A B C (The sequence breaks if A is called again because it is not apart of that sequence)
